@@ -1,45 +1,45 @@
 const categories = [
     {
-        id: 'Plant',
+        id: 'plants',
         name: 'Plant',
         tags: [ 'Products', 'inspiration' ],
         count: 147,
-        image: requir('../assets/images/plant.png')
+        image: require('../assets/icons/plant.png')
     },
     {
         id: 'seeds',
         name: 'Seeds',
         tags: ['Products', 'shop'],
         count: 16,
-        image: requir('../assets/images/seed.png'),
+        image: require('../assets/icons/seeds.png'),
     },
     {
-        id: 'Flowers',
+        id: 'flowers',
         name: 'Flowers',
         tags: ['Products', 'inspiration'],
         count: 68,
-        image: requir('../assets/images/flowers.png'),
+        image: require('../assets/icons/flowers.png'),
     },
     {
-        id: 'Sprayyers',
+        id: 'sprayyers',
         name: 'Sprayyers',
         tags: ['Products', 'shop'],
         count: 12,
-        image: requir('../assets/images/sprayyers.png'),
+        image: require('../assets/icons/sprayers.png'),
     },
     {
-        id: 'Poats',
+        id: 'poats',
         name: 'Poats',
         tags: ['Products', 'inspiration'],
         count: 147,
-        image: requir('../assets/images/poat.png'),
+        image: require('../assets/icons/pots.png'),
     },
     {
-        id: 'Fertilizers',
+        id: 'fertilizers',
         name: 'Fertilizers',
         tags: ['Products', 'shop'],
         count: 147,
-        image: requir('../assets/images/fertilizer.png'),
+        image: require('../assets/icons/fertilizers.png'),
     },
 ];
 
@@ -50,13 +50,13 @@ const  products = [
         description: 'Lorium prism',
         tags: ['Interior', '27m', 'Ideas'],
         gallery: [
-            requir('../assets/images/plant_1.png'),
-            requir('../assets/images/plant_2.png'),
-            requir('../assets/images/plant_3.png'),
+            require('../assets/images/plant_1.jpg'),
+            require('../assets/images/plant_2.jpg'),
+            require('../assets/images/plant_3.png'),
             // showing only 3 img, show +3 fro the rest
-            requir('../assets/images/plant_4.png'),
-            requir('../assets/images/plant_5.png'),
-            requir('../assets/images/plant_6.png'),
+            require('../assets/images/plant_1.jpg'),
+            require('../assets/images/plant_2.jpg'),
+            require('../assets/images/plant_3.png'),
         ]
 
     }
@@ -64,22 +64,28 @@ const  products = [
 
 const  explore = [
     //images
-    requir('../assets/images/explore_1.png'),
-    requir('../assets/images/explore_2.png'),
-    requir('../assets/images/explore_3.png'),
-    requir('../assets/images/explore_4.png'),
-    requir('../assets/images/explore_5.png'),
-    requir('../assets/images/explore_6.png'),
+    require('../assets/images/explore_1.jpg'),
+    require('../assets/images/explore_2.jpg'),
+    require('../assets/images/explore_3.jpg'),
+    require('../assets/images/explore_4.jpg'),
+    require('../assets/images/explore_5.jpg'),
+    require('../assets/images/explore_6.jpg'),
 ];
 
 const profile = {
-
+    username: 'react-ui--kit',
+    location: 'Europe',
+    email: 'contact@react-ui-kit.com',
+    avater: require('../assets/images/avatar.jpg'),
+    budget: 2500,
+    monthly_cap: 5000,
+    notifications: true,
+    newsletter: false,
 };
 
 export {
     categories,
     explore,
     products,
-    explore,
     profile,
 }
